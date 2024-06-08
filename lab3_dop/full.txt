@@ -1,0 +1,26 @@
+a = 1
+b = 2
+
+for i = 3, b in
+    a = a + 4
+
+if b then
+    a = a - 5
+else
+    a = 6
+
+c = a
+
+
+
+int a = 10;
+while (a > 0) {
+    a = a - 1;
+}
+
+int a1 = 10;
+while (a > 0) {
+    a2 = phi(a1, a3)
+    a3 = a2 - 1;
+}
+

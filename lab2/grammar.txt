@@ -1,0 +1,27 @@
+Function -> Type IDENT () Block
+Statements -> Statement Statements | EPSILON
+Statement ->  Assign ; | ReAssign ; |  IfSt | ForSt | ReturnSt ;
+
+
+Block -> { Statements }
+
+Assign -> Type ReAssign
+ReAssign -> IDENT = ArithExpr
+
+// for и if
+IfSt -> IF ( LogicExpr ) Block IfStElse
+IfStElse -> else Block | EPSILON
+ForSt -> FOR ( ForPreAssign ; LogicExpr; ForPostAssign ) Block
+ForPreAssign -> Assign | ReAssign | EPSILON
+ForPostAssign -> ReAssign | EPSILON
+
+// Временно такое LogicExpr
+LogicExpr -> ArithExpr CmpOp ArithExpr
+
+// return 
+ReturnSt -> return ArithExpr 
+
+// типы
+Type -> int
+
+

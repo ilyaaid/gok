@@ -1,0 +1,15 @@
+int main () {
+    int a = 34;
+    a = 35;
+    if (a > 34) {
+        a = 36;
+    } else {
+        a = 32;
+    }
+
+    while (a > 30) {
+        a = a - 1;
+    }
+
+    return a;
+}
